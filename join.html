@@ -2,10 +2,214 @@
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="images/favicon.ico">
     <title>회원가입</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="./css/account.css">
 </head>
 <body>
+    <div class="skip_navigation">
+        <a href="#container">본문 바로가기</a>
+        <a href="#footer">하단 바로가기</a>
+    </div>
+
+    <header id="header">
+        <div class="inner">
+            <h1><a href="index.html"><img src="images/logo.svg" alt="rareraw"></a></h1>
+
+            <h2 class="blind">주요메뉴</h2>
+            <nav class="gnb">
+                <ul class="gnb_inner">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">Brand story</a></li>
+                            <li><a href="#">무한대R</a></li>
+                            <li><a href="#">Showroom</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">Catalogue</a></li>
+                            <li><a href="#">Editorial</a></li>
+                            <li><a href="#">Style</a></li>
+                            <li><a href="#">Manual</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                        <ul class="sub">
+                            <li><a href="#">SYSTEM000</a></li>
+                            <li><a href="#">RACK</a></li>
+                            <li><a href="#">FURNITURE</a></li>
+                            <li><a href="#">LIFE STYLE</a></li>
+                            <li><a href="#">DESKTERIOR</a></li>
+                            <li><a href="#">LIMITED EDITION</a></li>
+                            <li><a href="#">SALE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Archive</a>
+                        <ul class="sub">
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Event</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Rareraw house</a>
+                        <ul class="sub">
+                            <li><a href="#"><img src="images/sub_img2.jpg" alt="2024 레어마켓 오픈">2024 레어마켓 오픈</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="gnbsub_bg"></div>
+            </nav>
+
+            <ul class="util">
+                <li><a href="login.html"><img src="images/icon_account1.svg" alt="로그인"></a></li>
+                <li><a href="#"><img src="images/icon_like_empty1.svg" alt="위시리스트"></a></li>
+                <li><a href="#"><img src="images/icon_cart1.svg" alt="장바구니"></a></li>
+                <li><a href="#"><img src="images/icon_search1.svg" alt="검색"></a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+
+    <main>
+        <div id="wrap">
+
+            <h3>JOIN</h3>
+            <form action="">
+
+                <fieldset>
+                    <legend class="blind">회원가입</legend>
+                    <p>
+                        <label for="join_id">아이디</label>
+                        <input type="text" id="join_id" class="in" placeholder="(영문소문자/숫자,4~16자)">
+                    </p>
+                    <p>
+                        <label for="join_pw">비밀번호</label>
+                        <input type="password" id="join_pw" class="in" placeholder="(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)">
+                    </p>
+                    <p>
+                        <label for="join_pw_confirm">비밀번호 확인</label>
+                        <input type="password" id="join_pw_confirm" class="in">
+                    </p>
+                    <p>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" class="in">
+                    </p>
+                    <p class="adrees">
+                        <label for="post">주소</label>
+                        <input type="text" maxlength="14" id="post" class="in">
+                        <button>우편번호검색</button>
+                    </p>
+                    <p>
+                        <label for="addr1">기본주소</label>
+                        <input type="text" placeholder="기본주소" id="addr1" class="in">
+                    </p>
+                    <p>
+                        <label for="addr2">나머지주소</label>
+                        <input type="text" placeholder="나머지주소" id="addr2" class="in">
+                    </p>
+
+                    <div>
+                        <label for="phone" class="la">일반전화</label>
+                        <select id="phone"><!-- 선택목록(택1) -->
+                           <option>010</option>
+                           <option>011</option>
+                           <option>016</option>
+                           <option>017</option>
+                           <option>018</option>
+                           <option>019</option>
+                        </select>
+                        <span>-</span>
+                        <input type="text" maxlength="4" id="phone2" class="in">
+                        <span>-</span>
+                        <input type="text" maxlength="4" id="phone3" class="in">
+                     </div>
+
+                    <input type="submit" value="로그인">
+                    <div class="find">
+                        <a href="#">아이디 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                        <a href="#">비회원 주문조회</a>
+                    </div>
+                    <div class="join">
+                        <a href="join.html" class="btn_acc">회원가입</a>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+
     
+    <footer id="footer">
+        <div class="inner">
+            <h2 class="blind">사이트맵(전체메뉴)</h2>
+            <div id="sitemap">
+                <div>
+                    <h3>카테고리</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="#">Rareraw house</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>기업 정보</h3>
+                    <ul>
+                        <li><a href="#">RARERAW 채용정보</a></li>
+                        <li><a href="#">RARERAW 회사 소개</a></li>
+                        <li><a href="#">지속가능성 (Sustainability)</a></li>
+                        <li><a href="#">언론</a></li>
+                        <li><a href="#">IR 정보</a></li>
+                        <li><a href="#">Corporate governance</a></li>
+                    </ul>
+                </div>
+                <div>
+                <h3>고객지원</h3>
+                    <ul>
+                        <li><a href="#">RARERAW 채용정보</a></li>
+                        <li><a href="#">RARERAW 회사 소개</a></li>
+                        <li><a href="#">지속가능성 (Sustainability)</a></li>
+                    </ul>
+                </div>
+                <div class="map_srvi">
+                    <h3>Customer service</h3>
+                    <ul>
+                        <li><a href="#">실시간 문의하기</a></li>
+                        <li><p>월 &hyphen; 금  10:00 &hyphen; 17:30 <br>
+                            휴식 시간 12:00 &hyphen; 13:00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="info">
+                <ul>
+                    <li><a href="#"><img src="images/icon_insta.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="images/icon_blog.svg" alt="blog"></a></li>
+                </ul>
+                <p class="copyright"> The content of this site is copyright-protected and is the property of RARERAW.<br>
+                    We also think about sustainability in the manufacturing process.<br>
+                    We create unique products through various collavorations with designers and makers.
+                </p>
+                <a href="index.html" class="footer_logo"><img src="images/logo.svg" alt="레어로우"></a>
+            </div>
+        </div>
+        <a href="#" class="top_icon"><img src="images/top_icon.svg" alt="위로가기 아이콘"></a>
+    </footer>
+
+
+
+    <script src="./js/index.js"></script>
+
 </body>
 </html>
