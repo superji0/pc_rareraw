@@ -2,7 +2,6 @@
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rareraw</title>
     <link rel="icon" href="images/favicon.ico">
     <!-- 구글웹폰트(fonts.google.com) -->
@@ -22,7 +21,7 @@
 
     <header id="header">
         <div class="inner">
-            <h1><a href="#"><img src="images/logo.svg" alt="rareraw"></a></h1>
+            <h1><a href="index.html"><img src="images/logo.svg" alt="rareraw"></a></h1>
 
             <h2 class="blind">주요메뉴</h2>
             <nav class="gnb">
@@ -75,7 +74,7 @@
             </nav>
 
             <ul class="util">
-                <li><a href="#"><img src="images/icon_account1.svg" alt="로그인"></a></li>
+                <li><a href="login.html"><img src="images/icon_account1.svg" alt="로그인"></a></li>
                 <li><a href="#"><img src="images/icon_like_empty1.svg" alt="위시리스트"></a></li>
                 <li><a href="#"><img src="images/icon_cart1.svg" alt="장바구니"></a></li>
                 <li><a href="#"><img src="images/icon_search1.svg" alt="검색"></a></li>
@@ -326,164 +325,28 @@
 
 
 
-    <script>
-        
 
 
-    //헤더 스크롤 이벤트
-    function headerScroll(){
-        window.addEventListener("scroll", function() {
-            
-            //헤더 위치
-            let headerTop = header.offsetTop;
-            //스크롤 위치
-            let scrollPosition = window.scrollY;
+    <script src="./js/index.js"></script>
 
-            if(scrollPosition > headerTop){
-                document.getElementById('header').style.transition="0.3s ease-in"
-                document.getElementById('header').style.background = 'black';
-            }else if (scrollPosition == headerTop){
-                document.getElementById('header').style.transition="0.3s ease-in"
-                document.getElementById('header').style.background = "rgba"+"(0, 0, 0, 0.5)"; 
-            }
-        });
-
-    }
-
-
-    headerScroll();
-   
-
-    //페이지 로드시  비주얼 영역 실행
-    window.onload = typoMoving;
-
-    function typoMoving(){
-        const visualTypo = document.querySelector(".typo");
-
-        visualTypo.style.transform="translateY(" + -50 + "px)";
-    }
- 
-
-    function test(){
-        
-        window.addEventListener("scroll",function(){
-
-            const style_area = document.querySelectorAll(".style_con li");
-
-            const sc = window.scrollY;
-
-
-            const style_t =  document.querySelector("#style").offsetTop;
-
-            console.log(sc);
-
-            if(sc >= 2200){
-            style_area[0].style.transform="translateY(" + -20 + "px)";
-            style_area[1].style.transform="translateY(" + -20 + "px)";
-            style_area[2].style.transform="translateY(" + -20 + "px)";
-            style_area[3].style.transform="translateY(" + -20 + "px)";
-            } else {
-           
-            style_area[0].style.transform="translateY(" + 0 + "px)";
-            style_area[1].style.transform="translateY(" + 0 + "px)";
-            style_area[2].style.transform="translateY(" + 0 + "px)";
-            style_area[3].style.transform="translateY(" + 0 + "px)";
-            }
-        });
-
-    }
-
-    test();
-
-
-    //gnb 메뉴 이벤트
-    let subGnb = document.querySelectorAll(".sub");
-    let subBg = document.querySelector(".gnbsub_bg");
-    let mainGnb = document.querySelector(".gnb");
-
-    //초기설정
-    subGnb.forEach(e=>{
-        e.style.display="none";
-        subBg.style.display="none";
-    })
-
-    mainGnb.addEventListener("mouseover",gnbOn);
-    mainGnb.addEventListener("focusin",gnbOn);
-
-
-    function gnbOn(){
-        subGnb.forEach(e=>{
-            e.style.display="block";
-            subBg.style.display="block";
-        });
-    }
-
-    mainGnb.addEventListener("mouseout",gnbOff);
-    mainGnb.addEventListener("focusout",gnbOff);
-
-    function gnbOff(){
-        subGnb.forEach(e=>{
-        e.style.display="none";
-        subBg.style.display="none"
-    });
-    }
-
-
-
-
-
-    //SOCIAL MEDIA 탭메뉴
-    let tab = document.querySelectorAll('.tab_menu li');
-    let con = document.querySelectorAll('.con');
-
-    // 초기설정
-    tab.forEach(e=>{e.style.background="none";});
-    tab[0].style.background="#75fb4c";
-
-    con.forEach(e=>{e.style.display="none";});
-    con[0].style.display="block";
-
-
-    tab[0].addEventListener("click",function(){
-    tab.forEach(e=>{e.style.background="none";});
-    tab[0].style.background="#75fb4c";
-    con.forEach(e=>{e.style.display="none";});
-    con[0].style.display="block";
-    });
-
-    tab[1].addEventListener("click",function(){
-    tab.forEach(e=>{e.style.background="none";})
-    tab[1].style.background="#75fb4c";
-    con.forEach(e=>{e.style.display="none";})
-    con[1].style.display="block";
-    });
-
-
-
-
-    </script>
-
-
+  
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- 스와이퍼 -->
     <script>
-
         let swiper1 = new Swiper(".gallery1", { //갤러리 영역명
-    
+        
             loop:true, //순환유무
             grabCursor:true, //커서 손모양
-    
+
             autoplay:{ //자동실행
                 delay:3000,//자동실행 간격 (1000=1초)
                 disableOnInteraction:true, //true로 설정하면 메뉴를 누른후부터는 자동실행 안됨
             },
-    
+
             effect:'slide', //slide fade cube coverflow flip cards creative
-    
+
             slidesPerView:4, //보이는 영역에 표시될 슬라이드 개수 (effect사용시 사용불가)
             //spaceBetween:10, //슬라이드 사이의 간격
-    
+
             pagination: {
                 el:".nav1", //메뉴영역 클래스명
                 clickable:true, //메뉴 클릭때도 슬라이드 실행
@@ -491,14 +354,13 @@
                 //type:"progressbar", //진행 스크롤바 형태로 표시
                 type:"fraction", //페이지 번호 형태로 표시
             },
-    
+
             navigation: {
                 nextEl:".b-next1",//다음 버튼 클래스명
                 prevEl:".b-prev1",//이전 버튼 클래스명
             },
-    
+
         });
-    
     </script>
 
 

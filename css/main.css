@@ -3,18 +3,6 @@
 
 
 
-/* header */
-#header h1 {position: absolute; left: 0; top:calc(50% - 30px/2); width: 194px;height: 30px;}
-#header h1 img {width: 100%; height: 100%;}
-#header .gnb {position: absolute; left: 416px; top:0; height: 100%;}
-#header .gnb>ul {display: flex; justify-content: space-between; width: 700px;height: 100%; line-height: 100px}
-#header .gnb ul li {width: 140px; }
-#header .gnb ul li a {color: var(--white);}
-#header .gnb ul li a:hover {color: var(--green); border-bottom: 1px solid var(--green);}
-#header .util{display: flex; justify-content: space-between; position: absolute; right: 0; top: calc(50% - 20px/2); width: 130px; height: 20px;  }
-#header .util img {width: 100%; height: 100%;}
-
-
 /* visual */
 #visual .typo p:nth-child(1){font-size: 38px; text-align: center; font-weight: 700; color: var(--white); }
 #visual .typo p:nth-child(2){display: block; font-size: 16px; font-weight: 900; color: var(--green);margin-top: 16px;}
@@ -67,31 +55,6 @@
 overflow: hidden; white-space: nowrap;text-align: left;transition: 0.3s;}
 #social .tab_contents .con li:hover a {color: var(--green);}
 #social .tab_contents .con li p {text-align: left; font-size: 12px; margin-top: 10px;}
-
-
-/* footer */
-#footer {background-color: var(--black); }
-#footer .inner {width: 1285px; margin: 0 auto; }
-#footer #sitemap {display: flex; justify-content: space-between; padding: 84px 0 114px 0; } 
-#footer #sitemap h3 {margin-bottom: 22px;}
-#footer #sitemap div {flex: 1; color: var(--white);}
-#footer #sitemap a{font-size: 14px; color: var(--white); line-height:2em;}
-#footer #sitemap a:hover{color: var(--green);}
-
-#footer #sitemap  .map_srvi ul li:first-child { margin: 30px 0 22px 0;}
-#footer #sitemap  .map_srvi ul li a{width: 130px; height: 45px;  border: 1px solid var(--white);padding: 5px 10px;}
-
-#footer #info {opacity: 0.5;}
-#footer #info ul {display: flex; justify-content: center; gap: 10px;}
-#footer #info .copyright {color: var(--white); text-align: center; font-size: 12px; padding: 8px 0 10px 0;}
-#footer #info .footer_logo { display: flex; justify-content: center; padding: 8px 0 33px 0;}
-#footer #info .footer_logo img {width: 150px; height: 30px;}
-
-#footer .top_icon {position: fixed; right: 30px; bottom: 50px; width: 40px; height:40px; background-color:rgb(255, 255, 255,0.5); border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; z-index: 20;}
-#footer .top_icon:hover {background-color: #75fb4c; border-radius: 50px; }
-#footer .top_icon img {width: 100%; height: 100%;opacity: 0.8; }
-
-
 
 
 /* 갤러리 swiper */
