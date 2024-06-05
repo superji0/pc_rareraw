@@ -94,7 +94,7 @@
 
     <div id="container">
         <section id="product">
-            <div class="swiper gallery1 inner">
+            <div class="swiper productSlide inner">
                 <h2>MONTHLY PRODUCT</h2>
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
@@ -123,26 +123,20 @@
                     </li>
                     <li class="swiper-slide">
                         <a href="#">
-                            <img src="images/product_04.png" alt="RRW STOOL">
-                            <p>RRW STOOL</p>
+                            <img src="images/product_01.jpg" alt="CYLINDER TABLE">
+                            <p>CYLINDER TABLE</p>
                         </a>
                     </li>
                     <li class="swiper-slide">
                         <a href="#">
-                            <img src="images/product_04.png" alt="RRW STOOL">
-                            <p>RRW STOOL</p>
+                            <img src="images/product_02.jpg" alt="PO STACKING SHELF">
+                            <p>PO STACKING SHELF</p>
                         </a>
                     </li>
                     <li class="swiper-slide">
                         <a href="#">
-                            <img src="images/product_04.png" alt="RRW STOOL">
-                            <p>RRW STOOL</p>
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#">
-                            <img src="images/product_04.png" alt="RRW STOOL">
-                            <p>RRW STOOL</p>
+                            <img src="images/product_03.jpg" alt="CITY BOYS BASKET">
+                            <p>CITY BOYS BASKET</p>
                         </a>
                     </li>
                     <li class="swiper-slide">
@@ -332,27 +326,24 @@
   
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        let swiper1 = new Swiper(".gallery1", { //갤러리 영역명
+        let swiper1 = new Swiper(".productSlide", {
         
-            loop:true, //순환유무
-            grabCursor:true, //커서 손모양
+            loop:true, 
+            grabCursor:true,
 
-            autoplay:{ //자동실행
-                delay:3000,//자동실행 간격 (1000=1초)
-                disableOnInteraction:true, //true로 설정하면 메뉴를 누른후부터는 자동실행 안됨
+            autoplay:{ 
+                delay:3000,
+                disableOnInteraction:true,
             },
 
-            effect:'slide', //slide fade cube coverflow flip cards creative
+            effect:'slide',
 
-            slidesPerView:4, //보이는 영역에 표시될 슬라이드 개수 (effect사용시 사용불가)
-            //spaceBetween:10, //슬라이드 사이의 간격
+            slidesPerView:4,
 
             pagination: {
-                el:".nav1", //메뉴영역 클래스명
-                clickable:true, //메뉴 클릭때도 슬라이드 실행
-                //dynamicBullets:true, //활성화 메뉴는 크고 나머지 메뉴는 작아는 효과
-                //type:"progressbar", //진행 스크롤바 형태로 표시
-                type:"fraction", //페이지 번호 형태로 표시
+                el:".nav1",
+                clickable:true,
+                type:"fraction", 
             },
 
             navigation: {

@@ -58,16 +58,15 @@ overflow: hidden; white-space: nowrap;text-align: left;transition: 0.3s;}
 
 
 /* 갤러리 swiper */
-.gallery1 .swiper-pagination { /* 메뉴영역 */
-	
-}
-
-.gallery1 .swiper-slide {
+.productSlide .swiper-slide {
     height: 340px;
     text-align: center;
 }
 
-#container .gallery1 span {color: var(--black);}
+#container .productSlide span {color: var(--black);}
 
+.productSlide .swiper-button-prev { margin-right: 50px; color:#222;}
+.productSlide .swiper-button-prev::after { color:#222; }
 
-
+.productSlide .swiper-button-next {  color:#222; }
+.productSlide .swiper-button-next::after { color:#222; }
